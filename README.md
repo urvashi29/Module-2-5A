@@ -123,18 +123,13 @@ Import Tailwind in styles/globals.css:
 
 
 Run your app:
-
 npm run dev
 
 📚 You Will Learn:
-
-File-based routing in Next.js
-
-Static and server-side rendering (SSR/SSG)
-
-SEO optimization using Next.js
-
-Performance and image optimization
+Responsive layout design
+Typography and color utilities
+Flexbox and Grid system
+Custom spacing, shadows, and animation
 
 🧠 Skills You Will Gain
 Skill	Description
@@ -142,49 +137,23 @@ Tailwind CSS	Utility-first styling for fast, responsive design
 React.js	Component-driven user interfaces
 Next.js	Framework for SEO-friendly and scalable web apps
 Dynamic Web Design	Building interactive, data-driven UI components
-🧱 Folder Structure Example
-frontend-module/
-│
-├── html-cdn/
-│   └── index.html
-│
-├── react-tailwind/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── index.css
-│   └── tailwind.config.js
-│
-├── next-tailwind/
-│   ├── pages/
-│   ├── components/
-│   ├── styles/
-│   └── tailwind.config.js
-│
-└── README.md
+
+
 
 💡 Practice Projects
-
 🌐 Responsive Landing Page — Using HTML + Tailwind CDN
-
 🧭 Portfolio Website — Using React + Tailwind
-
 📰 Blog Application — Using Next.js + Tailwind
-
 📊 Dashboard UI — Responsive and interactive design
 
 🏁 Learning Outcomes
-
 By completing this module, you will be able to:
-
 ✅ Create fully responsive UIs with Tailwind CSS
 ✅ Develop reusable React components
 ✅ Build SEO-optimized web apps using Next.js
 ✅ Apply best practices in modern frontend development
 
 👨‍💻 Submitted by
-
 Name: Wahid Husain
 Program: AlmaBetter — Full Stack Web Development
 Module: Frontend Development
@@ -192,5 +161,3 @@ Module: Frontend Development
 GitHub: https://github.com/wahidhusaindev
 
 💬 “Frontend development is not just about writing code — it’s about designing experiences.”
-   ```html
-   <script src="https://cdn.tailwindcss.com"></script>
