@@ -68,8 +68,8 @@ const emp = {
 console.log(emp);
 
 //see common.js file
-// import add from "../common.js";//ES6
-var add = require("../common"); //ES5
+// import add from "./common.js";//ES6
+var add = require("./common"); //ES5
 console.log(add(10, 20));
 
 // Rest Operator (...)
