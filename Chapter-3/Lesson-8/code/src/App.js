@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import Employee from "./pages/Employee";
 import NotFound from "./pages/NotFound";
+import EmployeeDetail from "./pages/EmployeeDetail";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/employees" element={<Employee />} />
+          <Route path="/employees/:userid" element={<EmployeeDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 
@@ -30,3 +32,7 @@ const App = () => {
 };
 
 export default App;
+
+// HOC
+// STYLING
+// FOLDER STRUCTURE
