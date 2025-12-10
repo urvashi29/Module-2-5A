@@ -1,4 +1,4 @@
-import { INC, DEC } from "../action/actiontype";
+import { INC, DEC, ADD_PRODUCTS } from "../action/actiontype";
 
 //Central/Global state
 const initState = {
@@ -28,6 +28,8 @@ const reducer = (state = initState, action) => {
       if (state.counter > 0) {
         return { ...state, counter: state.counter - action.payload };
       }
+    case ADD_PRODUCTS:
+      return { ...state, products: action.payload.httpResponse };
     default:
       return state;
   }
