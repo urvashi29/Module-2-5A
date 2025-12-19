@@ -1,12 +1,13 @@
-import { Provider } from "react-redux";
-import { legacy_createStore as createStore } from "redux";
+import React from "react";
 import { render, cleanup, fireEvent } from "@testing-library/react";
-import { reducer } from "../reducer";
 import Counter from "../pages/Counter";
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import reducer from "../reducer";
 
 const renderWithRedux = (
   component,
-  { initialState, store = createStore(reducer, initialState) } = {}
+  { initState, store = createStore(reducer, initState) } = {}
 ) => {
   return {
     ...render(<Provider store={store}>{component}</Provider>),
@@ -14,24 +15,18 @@ const renderWithRedux = (
   };
 };
 
-afterEach(cleanup);
-
-it("inc counter", () => {
+it("increment through redux", () => {
   const { getByTestId } = renderWithRedux(<Counter />, {
-    initState: {
-      counter: 5,
-    },
+    initState: { counter: 5 },
   });
 
   fireEvent.click(getByTestId("button-up"));
   expect(getByTestId("counter")).toHaveTextContent("6");
 });
 
-it("dec counter", () => {
+it("increment through redux", () => {
   const { getByTestId } = renderWithRedux(<Counter />, {
-    initState: {
-      counter: 5,
-    },
+    initState: { counter: 5 },
   });
 
   fireEvent.click(getByTestId("button-down"));
